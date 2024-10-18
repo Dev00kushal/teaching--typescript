@@ -6,8 +6,13 @@
 // In the case of variable it is normal typescript will know 
 // In the case of parameter it doesnot know the type, so assign it 
 function sum(num1, num2) {
-    num1 = 10;
     return num1 + num2;
 }
 var answer = sum(1, 2);
 console.log(answer);
+function loginForm(name, email, zipCode, isAdmin) {
+    if (isAdmin === void 0) { isAdmin = false; }
+}
+// So admin is becomes optional here you write if you like if not because of the false assigment there
+// That is called default assigment within the function itself you can keep optional too by providing isAdmin?:boolean your wisdom when to use what karan
+var res = loginForm("Karan Sunar", "k@k.sunar", 8808);
